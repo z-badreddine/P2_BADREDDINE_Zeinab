@@ -1,0 +1,99 @@
+
+article, aside, footer 
+{
+    background-color: #f2f2f2;
+    color:black
+ }
+
+  #block_page
+  {
+      font-family: 'Raleway', sans-serif;
+      width: 1200px;;
+      margin:auto;
+  }
+
+  body h4,h5,h6, #titre_filtre
+  {
+    font-weight:bold;
+    color:black;
+  }
+
+
+  a
+  {
+    text-decoration: none;
+  }
+
+
+
+  header
+  {
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  nav ul, #form ul, #titre_filtre ul
+  {
+      list-style-type: none;
+      display: flex;
+  }
+  nav li, #form li, #titre_filtre li
+  {
+      margin-right: 30px;
+  }
+ 
+
+  nav a:hover
+  {
+    color: #0065FC;
+  }
+ 
+  .inscrire
+  {
+    color:#0065FC;
+    font-weight:bold;
+  }
+
+
+
+
+
+  #banniere h4
+  {
+    margin-bottom: -10px;;
+  }
+
+  #form
+  {
+    display:flex;
+    margin-left: auto;
+  }
+  
+ .economique, .familial, .romantique, .animaux
+ {
+border: 1px solid #f2f2f2 ;
+border-radius: 200px;
+padding: 8px 10px 10px 10px;
+ }
+ 
+
+ section
+ {
+   display:flex;
+ }
+
+ article, aside
+ {
+   text-align:justify;
+ }
+ article
+ {
+   margin-right:20px;
+   flex:3;
+ }
+
+ #block_article
+ {
+   
+ }

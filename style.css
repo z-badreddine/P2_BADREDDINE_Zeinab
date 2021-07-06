@@ -78,7 +78,10 @@ nav a:hover
    justify-content: flex-start;
  }
 
-
+ .icone_recherche
+ {
+   display: none;
+ }
 
 #ville
 {
@@ -133,7 +136,7 @@ margin-right: 15px;}
  align-items: baseline;
  color: #181818;
  margin-right: 15px;
- border:1px solid #f2f2f2;
+ border:2px solid #f2f2f2;
  border-radius: 25px;
 }
 
@@ -502,6 +505,16 @@ width: 70%;
  {
    width: 95%;
    margin: 10px;
+ }
+
+ .icone_recherche
+ {
+   display: contents;
+ }
+
+ .rechercher
+ {
+   display: none;
  }
 
  #block_filtre

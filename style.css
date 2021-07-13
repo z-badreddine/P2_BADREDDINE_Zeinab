@@ -3,7 +3,7 @@
   color:#181818;
    font-size: 14px;
    font-family: 'Raleway',sans-serif;
-   width: 100%;
+   max-width: 95%;
    margin:auto;
 }
 
@@ -72,20 +72,13 @@ nav a:hover
 
 
 
-
-
-
-
 /*banniere*/
-#banniere_text
- { 
-   justify-content: flex-start;
+ 
+.icone_recherche
+ {
+  display: none;
  }
 
- .icone_recherche
- {
-   display: none;
- }
 
 #ville
 {
@@ -186,13 +179,18 @@ margin-right: 15px;}
 
 #information
 { display: flex;
+  flex-direction: row;
+  align-items: baseline;
  margin-bottom: 20px;
  padding-left: 5px;
 }
 
-.icone_information
-{
- margin-right: 10px;
+#information .icone
+{ margin-right:5px ;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
 }
 
 
@@ -201,29 +199,27 @@ margin-right: 15px;}
 section
 {
 display:flex;
-padding-bottom: 20px;
+flex-direction: row;
 }
 
-article, aside
-{
- text-align: justify ;
- padding:20px;
-}
+
 
 article{
-margin-right: 20px;
- flex:3;
+
+ flex:2.5;
  border-radius: 15px;
- 
+ padding: 20px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-right: 20px;
 }
 aside{
    flex:1.2;
    border-radius: 15px;
-   justify-content: flex-start;
-   align-content: space-between;
-   align-items: space-between;
-   
-}
+   padding: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
   
 
 
@@ -244,7 +240,7 @@ justify-content: space-between;
 .hotel
 {
 margin-bottom: 20px;
-width: 30%;
+min-width: 30%;
 }
 
 .hotel_description
@@ -283,8 +279,7 @@ padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-left: 5px;
-  padding-right: 5px;
+ 
  }
 
 
@@ -294,11 +289,12 @@ padding-left: 5px;
   margin-bottom: 20px;
  }
 
-.populaire_photo
+.populaire img
 {
   border: 4px solid white;
   border-radius: 15px 0px 0px 15px;
-  width: 40%;
+  width: 30%;
+  height: 110px;
   object-fit: cover; 
  
 }
@@ -310,21 +306,23 @@ background-color: white;
 border: 4px solid white;
 border-radius: 0px 15px 15px 0px;
 width: 60%;
+height: 100px;
 padding:5px;
 
+
+}
+
+.description1 .text
+{
+  width: 70%;
+  height: auto;
 }
 
 .populaire_star
 {
- margin-top: 35px;
+ margin-top: 30px;
 }
-.populaire_photo1
-{
- border: 4px solid white;
- border-radius: 15px 0px 0px 15px;
- width: 47%;
- object-fit: cover; 
-}
+
 
 
 
@@ -471,8 +469,8 @@ footer
 color:#181818;
 font-size: 14px;
 font-family: 'Raleway',sans-serif;
-width: 95%;
-margin:auto;
+width: 99%;
+margin:auto
 
 }
 
@@ -480,7 +478,7 @@ margin:auto;
 {
 display:flex;
 justify-content: space-between;
-padding-left: 60px;
+padding-left: 35px;
 width: 70%;
 }
 
@@ -489,27 +487,15 @@ width: 70%;
 /* petite résolution*/
 @media all and (max-width: 1280px)
 {
-#block_page
- {
-   width: auto;
-   padding: 20px;
-
- }
-
-
- header
- {
-   justify-content: space-between;
- }
-
-
-
  
- #banniere
- {
-   width: 95%;
-   margin: 10px;
- }
+  #banniere
+  {
+    width: auto;
+    padding: 0;
+    margin: 20px;
+
+  }
+
 
  .icone_recherche
  {
@@ -544,28 +530,37 @@ width: 70%;
   
  aside
   {
+   flex:1;
    border-radius: 0px;
+   padding: 20px;
+  
+  }
+
+  .description1 .text
+  {
+    width: 80%;
   }
 
   article
   {
-    background-color: white;
-    width: 100%;
-    margin-right: 20px;
+    flex:1;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: transparent;
+    padding: 20px;
   }
 
   #hebergement
   {
     flex-direction: column;
-    width: 100%;
+    padding-right: 0;
     
   
   }
 
   .hotel
   {
-    width: 87%;
-
+    width: auto;
     border-radius: 15px;
     box-shadow: 0px 2px 5px #f2f2f2;
   
@@ -584,6 +579,7 @@ width: 70%;
   { width: auto;
     height: 150px;
     margin-bottom: 30px;
+    
   }
 
   .activite_photo1, .activite_photo2, .activite_photo3, .activite_photo4, .activite_photo5, .activite_photo6 
@@ -600,15 +596,17 @@ width: 70%;
 
 footer
  {
-   width: 70%;
-   padding: 30px;
+   width: 95%;
+   margin:auto;
+  
  
  }
 #block_footer
   {
-  width: 100%;
+  
   flex-direction: column;
-  padding-left: 0px;
+  padding-left: 20px;
+
   }
 
 

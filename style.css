@@ -72,6 +72,8 @@ nav a:hover
 
 
 
+
+
 /*banniere*/
  
 .icone_recherche
@@ -282,11 +284,12 @@ padding-left: 5px;
  
  }
 
+ 
 
 .populaire
  {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
  }
 
 .populaire img
@@ -305,7 +308,7 @@ align-content: flex-start;
 background-color: white;
 border: 4px solid white;
 border-radius: 0px 15px 15px 0px;
-width: 60%;
+width: 70%;
 height: 100px;
 padding:5px;
 
@@ -320,7 +323,7 @@ padding:5px;
 
 .populaire_star
 {
- margin-top: 30px;
+ margin-top: 28px;
 }
 
 
@@ -487,11 +490,52 @@ width: 70%;
 /* petite résolution*/
 @media all and (max-width: 1280px)
 {
+  header
+  {
+    width:100%;
+    padding:0;
+    margin: auto;    
+  }
+  
+  .menu
+  {
+    width: 91.5%;
+    position: absolute;
+    flex-direction: column-reverse;
+  }
+
+  nav
  
+  { 
+    width: 100%;
+    padding-top: 0px;
+    border-bottom: 2.5px solid #f2f2f2;
+   
+  }
+
+ nav ul 
+ { 
+   padding-top: 29px;
+   padding-left: 0px;
+   width:auto;
+ }
+
+  
+
+
+  
+ .inscription
+ {
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 18px;
+   width: 100%;
+ }
+
   #banniere
   {
     width: auto;
-    padding: 0;
+    padding-top: 60px;
     margin: 20px;
 
   }
